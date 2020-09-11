@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POSITION</title>
+	<style>
+		.zero,.one,.two,.three,.four
+		{
+			width:100%;
+			height:100vh;
+			border:2px solid black;
+			background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3KAiYY8BzUM1I7dVJpY4YyXDfytW5dpCChQ&usqp=CAU');
+			background-repeat: no-repeat;
+		}
+		.zero
+		{
+			border:2px solid black;
+			background-position:center;
+		}
+		.one
+		{
+			border:2px solid black;
+			background-position:center top;
+		}
+		.two
+		{
+			border:2px solid black;
+			background-position:bottom right;
+		}
+		.three
+		{
+			border:2px solid black;
+			background-position:50% 50%;
+		}
+		.four
+		{
+			border:2px solid black;
+			background-position:50px 150px;
+		}
+		.five ul li
+		{
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="zero">center position</div>
+	<div class="one">position a background-image to be centered at top</div>
+	<div class="two">position a background-image to be bottom right:</div>
+	<div class="three">position a background-image using percent</div>
+	<div class="four"> position a background-image using pixels:</div>
+	<div class="five" style="margin:50px auto;text-align: center;text-decoration: none;border:2px solid black;width:60%;">OTHER PROPERTIES:
+						<ul><li>left top</li><li>left center</li><li>left bottom</li><li>right top</li><li>right center</li><li>right bottom</li>
+						<li>center top</li><li>center center</li><li>center bottom</li></ul></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DURATION</title>
+	<style>
+		body
+		{
+			width:100%;
+			color: black;
+			background-color: lavender;
+			font-family:serif;
+			height: 100%;
+			margin: 0;
+			font-weight: 400;
+		}
+		 p
+		{
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 30px;
+		}
+		
+		.container h2
+		{
+			text-align: center;
+			font-family: cursive;
+			font-weight: bold;
+			font-size:32px;
+			text-shadow: 1px 1px 1px black,
+			1px 2px 2px black;
+		}
+		.box
+		{
+			background:blue;
+			box-shadow: 10px 10px 12px 3px black;
+			width:250px;
+			height:250px;
+			position: relative;
+			animation:lefts infinite;
+			animation-duration: 2s;
+		}
+		@keyframes lefts{
+			0%
+			{
+				
+				left:0;
+			}
+			100%
+			{
+				
+				left:400px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	
+	<p>syntax::animation-duration: time|initial|inherit;</p>
+	<div class="container">
+		<h2>value=time(animation-duration=2s)</h2>
+		<h3>Specifies the length of time an animation should take to complete one cycle. This can be specified in seconds or milliseconds. Default value is 0, which means that no animation will occur</h3>
+		<h3><strong>Note:</strong> The animation-duration property is not supported in Internet Explorer 9 and earlier versions.</h3>
+		<div class="box"></div>
+</div>
+</body>
+</html>

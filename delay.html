@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DURATION</title>
+	<style>
+		body
+		{
+			width:100%;
+			color: black;
+			background-color: lavender;
+			font-family:serif;
+			height: 100%;
+			margin: 0;
+			font-weight: 400;
+		}
+		 p
+		{
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 30px;
+		}
+		
+		.container h2
+		{
+			text-align: center;
+			font-family: cursive;
+			font-weight: bold;
+			font-size:32px;
+			text-shadow: 1px 1px 1px black,
+			1px 2px 2px black;
+		}
+		.box
+		{
+			background:blue;
+			box-shadow: 10px 10px 12px 3px black;
+			width:250px;
+			height:250px;
+			position: relative;
+			animation:lefts 5s infinite;
+			animation-delay:5s;
+		}
+		@keyframes lefts{
+			0%
+			{
+				
+				left:0;
+			}
+			100%
+			{
+				
+				left:400px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	
+	<p>syntax::animation-delay: time|initial|inherit;</p>
+	<div class="container">
+		<h2>value=time(animation-delay=5s)</h2>
+		<h3>Defines the number of seconds (s) or milliseconds (ms) to wait before the animation will start. 
+	Default value is 0. Negative values are allowed. If you use negative values, the animation will start
+	 as if it had already been playing for N seconds/milliseconds.</h3>
+		<h3><strong>Note:</strong> The animation-duration property is not supported in Internet Explorer 9 and earlier versions.</h3>
+		<div class="box"></div>
+</div>
+</body>
+</html>

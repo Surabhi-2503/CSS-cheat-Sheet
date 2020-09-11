@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STATE</title>
+	<style>
+
+		body
+		{
+			margin:0;
+			background:black;
+			color:white;
+		}
+		h4{
+			font-size:25px;
+			font-weight:400;
+			font-family:sans-serif;
+			text-align: center;
+		}
+		p{
+
+			font-weight:400;
+			font-size:20px;
+		}
+		.one,.two
+		{
+			height:50vh;
+			width:100%;
+		}
+		.a1,.a2{
+			width:200px;
+			height:200px;
+			position: relative;
+			background-color:red;
+			border-radius:50%;
+			animation: two 5s infinite;
+		}
+		.a1:hover
+		{
+			animation-play-state:running;
+		}
+		.a2:hover{
+			animation-play-state:paused;}
+		@keyframes two{
+			0%{left:0px;}
+			100%{left:400px;background: blue;}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="one">
+		<h4><u>animation-play-state:running</u></h4>
+		<p>Default-value.Specifies that the animation is running.</p>
+		<div class="a1"></div>
+	</div><hr>
+	<div class="two">
+		<h4><u>animation-play-state:paused</u></h4>
+		<p>Specifies that animation is paused.</p>
+		<p>Hover over the red circle to stop the animation.</p>
+		<div class="a2"></div>
+	</div>
+</body>
+</html>
